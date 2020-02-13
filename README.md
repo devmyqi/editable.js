@@ -27,6 +27,8 @@ next
 future
 * edit table cells
 * data from json api
+* auto insert, suggestions
+* mouse navigation
 * save to server
 
 ## versions
