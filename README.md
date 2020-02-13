@@ -25,6 +25,7 @@ next
 * local storage
 
 future
+* configurations
 * edit table cells
 * data from json api
 * auto insert, suggestions

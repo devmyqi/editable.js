@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="128" height="128" version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ediTable - logo 2</title>
+<style type="text/css"><![CDATA[
+.canvas { stroke-width: 0px; stroke: #fff; fill: #fff; }
+path { stroke-linecap: round; stroke-linejoin: round; }
+.line { stroke-width: 16px; stroke: #66f; fill: none; opacity: 1.0; }
+.shade { stroke-width: 12px; stroke: #66f; fill: none; opacity: 0.6; }
+.back { stroke-width: 0px; stroke: #66f; fill: #66f; opacity: 0.3; }
+]]></style>
+<path class="canvas" d="m 0,0 h 128 v 128 h -128 v -128 z"/>
+<path class="back" d="m 64,64 m -50,-50 h 100 v 100 h -100 v -100 z"/>
+<path class="shade" d="m 64,64 m 0,-50 v 100 h -50 v -100 h 50 z
+	m -50,50 h 50"/>
+<path class="line" d="m 64,64 m 50,-50 h -50 v 100 h 50 m -50,-50 h 50"/>
+</svg>
+
