@@ -18,6 +18,7 @@ on your website.
 * moving rows
 
 next
+* logging configurable
 * filter table rows
 * sort table rows
 * column data types
