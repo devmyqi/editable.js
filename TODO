@@ -3,6 +3,9 @@ bugs:
 organisation:
 	- include course version
 	- tag first version (v0.0.1)
+	- use less to create styles
+	- automate tasks with gulp
+	- create a npm package (init)
 	+ add gitignore file @done(20-02-13 16:00)
 	+ create github repository @done(20-02-13 14:00)
 	future:
@@ -12,6 +15,7 @@ interface:
 	- select logo
 	- get icons, no font-awesome
 	- create table themes
+	- structured stylesheets
 documentation:
 	- feature documentation
 	- create UML diagrams

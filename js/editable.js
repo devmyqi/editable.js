@@ -16,6 +16,8 @@ const Log = function(level,message) {
 const Config = function() {
 	// properties
 	this.loglevel = 63;
+	// editable
+	this.allowEmpty = true; // missing fields in data objects
 	// functions
 	this.log = function(level,message) {
 		const logdate = function() {
@@ -40,21 +42,28 @@ const Config = function() {
 		};
 	};
 	// initialize
-	this.log(1,'new Config instance initialized');
+	this.log(1,'new Config instance initialized: '+this.loglevel);
 } // end of Config constructor function
 
 const config = new Config(); // instance MUST be present
 
-const Editable = function(dataObj={}) {
+const Editable = function(data={}) {
 	// argument processing
-	if ( typeof dataObj !== 'object' ) {
+	if ( typeof data !== 'object' ) {
 		return config.log(16,'invalid data type for new Editable()');
 	};
 	// properties
-	this.selector = 'table';
-	// handler functions
+	this.selector = data.selector ? data.selector : 'table';
+	this.objects = data.object ? data.objects : [];
+	// data functions
+	this.readOjects = function(object) {
+		config.log(2,'reading data object into the table');
+	};
 	// table functions
+		// getFields
+		// normalize // table structure
 	// row functions
+	// handler functions
 	// initialize
-	config.log(1,'new Editable instance initialized');
+	config.log(1,'new Editable instance initialized: '+this.selector);
 }; // end of Editable constructor function

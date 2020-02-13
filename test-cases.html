@@ -21,6 +21,7 @@
 				<th data-field="lastname">lastname</th>
 			</tr></thead>
 			<tbody>
+				<tr><td>firstname</td><td>lastname (in HTML)</td></tr>
 			</tbody>
 		</table>
 	</article>
@@ -32,7 +33,17 @@
 
 <script>
 	'use strict';
-	const editable1 = new Editable();
+	const users = [
+		{firstname:'John',lastname:'Doe'},
+		{firstname:'Emma',lastname:'Watson'},
+		{invalid:'record',wrong:'fields'},
+		{},
+		{firstname:'Incomplete'},
+	];
+	const editable1 = new Editable({
+		selector: 'table#users',
+		objects: users,
+	});
 </script>
 
 </body></html>
