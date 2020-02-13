@@ -9,16 +9,12 @@
 
 'use strict'; // not required, just a reminder
 
-const Log = function(level,message) {
-	console.log(level,message);
-} // end of Log function
-
 const Config = function() {
-	// properties
+	/* properties */
 	this.loglevel = 63;
-	// editable
+	/* editable */
 	this.allowEmpty = true; // missing fields in data objects
-	// functions
+	/* functions */
 	this.log = function(level,message) {
 		const logdate = function() {
 			const date = new Date();
@@ -41,29 +37,53 @@ const Config = function() {
 			console[command](`${logdate()} [${logtype(level)}] (${level}) ${message}`);
 		};
 	};
-	// initialize
+	/* initialize */
 	this.log(1,'new Config instance initialized: '+this.loglevel);
 } // end of Config constructor function
 
 const config = new Config(); // instance MUST be present
 
 const Editable = function(data={}) {
-	// argument processing
+	/* argument processing */
 	if ( typeof data !== 'object' ) {
 		return config.log(16,'invalid data type for new Editable()');
 	};
-	// properties
+	/* properties */
+	this.objects = data.objects ? data.objects : [];
 	this.selector = data.selector ? data.selector : 'table';
-	this.objects = data.object ? data.objects : [];
-	// data functions
-	this.readOjects = function(object) {
-		config.log(2,'reading data object into the table');
+	this.element = document.querySelector(this.selector)
+	if ( ! this.element ) {
+		return config.log(16,'unable to create table on node: '+this.selector);
 	};
-	// table functions
-		// getFields
-		// normalize // table structure
-	// row functions
-	// handler functions
-	// initialize
+	this.fields = Array.from(this.element.querySelectorAll('thead tr th'))
+		.map(element => element.dataset.field)
+		.filter(field => field !== undefined);
+	if ( ! this.fields.length ) {
+		return config.log(16,'no data fields defined in table: '+this.selector);
+	};
+	/* table functions */
+	this.getFields = function() {
+		config.log(4,'getting the data fields for table: '+this.selector);
+	};
+	this.normalizeTable = function() {
+		config.log(4,'normalizing the editable table: '+this.selector);
+	};
+	/* row functions */
+	this.addRow = function(object) {
+		config.log(4,'adding row into editable table: '+this.selector);
+	};
+	this.addRows = function(objects) {
+		config.log(2,'adding rows into editable table: '+this.selector);
+		this.objects.map(object => this.addRow(object));
+	};
+	/* handler functions */
+	/* initialize */
 	config.log(1,'new Editable instance initialized: '+this.selector);
+	/* call core functions */
+	// this.getFields();
+	// this.normalizeTable();
+	this.addRows(this.objects);
+
+	/* debugging output */
+	// console.log(this.objects);
 }; // end of Editable constructor function

@@ -32,20 +32,24 @@ header h1, header h2 {
 header h1 {
 	margin-right: 3rem;
 }
-article.testcase {
-	border: solid 1px;
+main {
+	display: flex;
+}
+main article.testcase {
+	border: solid 1px #ccc;
+	border-radius: 1rem;
 	margin: 1rem;
 	padding: 0.5rem;
 }
-article h3 {
+main article h3 {
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 0.5rem;
 }
-article table {
+main article table {
 	border-collapse: collapse;
 }
-article table th, article table td {
+main article table th, article table td {
 	border: dotted 1px;
 	padding: 0.3rem 0.5rem;
 }

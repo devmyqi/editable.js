@@ -46,7 +46,7 @@ future
 ```html
 <head>
 	...
-	<script src="editable.js"></script>
+	<script src="js/editable.js"></script>
 </head>
 ```
 
@@ -70,6 +70,7 @@ future
 ```html
 <script>
 	'use strict';
-	const table = new Table({selector:'table#myTable'});
+	const editable = new Editable({selector:'table#myTable'});
 </script>
 ```
+

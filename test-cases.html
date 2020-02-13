@@ -25,6 +25,21 @@
 			</tbody>
 		</table>
 	</article>
+	<article class="testcase">
+		<h3>invalid structure</h3>
+		<table id="invalid">
+			<tr><th>th in table</th></tr>
+			<thead>
+				<tr><th>th in thead</th></tr>
+				<tr><td>td in thead</td></tr>
+			</thead>
+			<tr><td>td in table</td></tr>
+			<tbody>
+				<tr><td>td in tbody</td></tr>
+				<tr><th>th in tbody</th></tr>
+			</tbody>
+		</table>
+	</article>
 </main>
 
 <footer>
@@ -33,6 +48,7 @@
 
 <script>
 	'use strict';
+	/* users table */
 	const users = [
 		{firstname:'John',lastname:'Doe'},
 		{firstname:'Emma',lastname:'Watson'},
@@ -44,6 +60,8 @@
 		selector: 'table#users',
 		objects: users,
 	});
+	/* invalid table */
+	// const editable2 = new Editable({selector:'table#invalid'});
 </script>
 
 </body></html>
