@@ -1,7 +1,50 @@
-organise:
-design:
 bugs:
-functions:
+	* luckily no bugs by now ;-)
+organisation:
+	- include course version
+	- tag first version (v0.0.1)
+	+ add gitignore file @done(20-02-13 16:00)
+	+ create github repository @done(20-02-13 14:00)
+	future:
+		- create node/npm repository
+interface:
+	- more logo drafts
+	- select logo
+	- get icons, no font-awesome
+	- create table themes
+documentation:
+	- feature documentation
+	- create UML diagrams
+	- write tutorial
+	- define usecases
+presentation:
+	- add logo to the README
+	- add a webpage on github
 features:
+	- edit table rows
+	- data from (json)
+	- data in HTML
+	- moving rows
+	- logger function with loglevels @done(20-02-13 15:00)
+	next:
+		- logging configurable
+		- filter table rows
+		- sort table rows
+		- configurable actions
+		- column data types
+		- formatting numbers
+		- local storage
+	future:
+		- configuration environment
+		- table, row and cell actions
+		- edit table cells
+		- data from json api
+		- auto insert, suggestions
+		- mouse navigation
+		- save to server
+		- connect to data api
 versions:
-
+	- v0.0.1 (alpha1)
+	- v0.0.2 (alpha2)
+	- v0.0.4 (beta1)
+	- v0.1.0 (rel1)

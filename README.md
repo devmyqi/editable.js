@@ -21,12 +21,14 @@ next
 * logging configurable
 * filter table rows
 * sort table rows
+* configurable actions
 * column data types
 * formatting numbers
 * local storage
 
 future
-* configurations
+* configuration environment
+* table, row and cell actions
 * edit table cells
 * data from json api
 * auto insert, suggestions

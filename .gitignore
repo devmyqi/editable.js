@@ -1,0 +1,6 @@
+# vim swap files
+*.swp 
+
+# binary images
+*.png
+
