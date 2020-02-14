@@ -1,7 +1,8 @@
 # ediTable - editable tables
 
 ediTable is a very small javascript library to easily embed editable tables
-on your website.
+on your website. It is very eas to setup, just define an table in your websites
+HTML code and load the script!
 
 ## specification
 
@@ -73,4 +74,3 @@ future
 	const editable = new Editable({selector:'table#myTable'});
 </script>
 ```
-

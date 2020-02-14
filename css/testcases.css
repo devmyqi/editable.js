@@ -1,59 +1,44 @@
-/*	meta information
-	filename: css/testcases.css
-	description: stylesheet for test cases
-	version: v0.0.1
-	author: Michael Wronna, Konstanz
-	created: 2020-02-13
-	modified: 2020-02-13
-*/
-
-*, *::before, *::after {
-	box-sizing: content-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 html {
-	font-family: helvetica, Arial, sans-serif;
-	font-size: 1rem;
-	color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #666;
 }
-body {
-	font-size: 100%;
+html body {
+  font-size: 100%;
+}
+html h1,
+html h2,
+html h3 {
+  margin: 0px;
+  margin-bottom: 0.5rem;
+  padding: 0px;
 }
 header {
-	display: flex;
+  display: flex;
 }
 header img.logo {
-	height: 50px;
-	margin-right: 2rem;
-}
-header h1, header h2 {
-	margin: 0px;
-	padding: 0px;
+  height: 50px;
+  margin-right: 1rem;
 }
 header h1 {
-	margin-right: 3rem;
+  margin-right: 5rem;
 }
 main {
-	display: flex;
+  display: flex;
 }
-main article.testcase {
-	border: solid 1px #ccc;
-	border-radius: 1rem;
-	margin: 1rem;
-	padding: 0.5rem;
-}
-main article h3 {
-	margin: 0px;
-	padding: 0px;
-	margin-bottom: 0.5rem;
-}
-main article table {
-	border-collapse: collapse;
-}
-main article table th, article table td {
-	border: dotted 1px;
-	padding: 0.3rem 0.5rem;
+main article {
+  border: solid 1px #ccc;
+  border-radius: 0.7rem;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 footer {
-	font-size: 0.8rem;
-	border-top: solid 1px;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  border-top: solid 1px;
 }

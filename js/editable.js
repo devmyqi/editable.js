@@ -4,7 +4,7 @@
 	version: v0.0.1 (alpha1)
 	author: Michael Wronna, Konstanz
 	created: 2020-02-13
-	modified: 2020-02-13
+	modified: 2020-02-14
 */
 
 'use strict'; // not required, just a reminder
@@ -67,6 +67,11 @@ const Editable = function(data={}) {
 	};
 	this.normalizeTable = function() {
 		config.log(4,'normalizing the editable table: '+this.selector);
+		// check for a unique tr with th
+		// create thead and tbody
+		// move table rows into tbody
+		// getting fields as return
+
 	};
 	/* row functions */
 	this.addRow = function(object) {
@@ -80,7 +85,7 @@ const Editable = function(data={}) {
 	/* initialize */
 	config.log(1,'new Editable instance initialized: '+this.selector);
 	/* call core functions */
-	// this.getFields();
+	console.log('fields:',this.fields);
 	// this.normalizeTable();
 	this.addRows(this.objects);
 

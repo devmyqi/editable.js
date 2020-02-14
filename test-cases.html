@@ -5,6 +5,7 @@
 	<title>ediTable - test cases</title>
 	<link rel="stylesheet" type="text/css" href="css/testcases.css"/>
 	<script src="js/editable.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/editable.css"/>
 </head><body>
 
 <header>
@@ -15,7 +16,7 @@
 <main>
 	<article class="testcase">
 		<h3>user table</h3>
-		<table id="users">
+		<table class="editable" id="users">
 			<thead><tr>
 				<th data-field="firstname">firstname</th>
 				<th data-field="lastname">lastname</th>
@@ -27,7 +28,7 @@
 	</article>
 	<article class="testcase">
 		<h3>invalid structure</h3>
-		<table id="invalid">
+		<table class="editable" id="invalid">
 			<tr><th>th in table</th></tr>
 			<thead>
 				<tr><th>th in thead</th></tr>
@@ -61,7 +62,7 @@
 		objects: users,
 	});
 	/* invalid table */
-	// const editable2 = new Editable({selector:'table#invalid'});
+	const editable2 = new Editable({selector:'table#invalid'});
 </script>
 
 </body></html>

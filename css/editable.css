@@ -1,0 +1,9 @@
+table.editable {
+  border-collapse: collapse;
+}
+table.editable thead tr th,
+table.editable tbody tr td {
+  text-align: left;
+  border: dotted 1px;
+  padding: 0.3rem 0.5rem;
+}

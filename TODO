@@ -1,12 +1,20 @@
 bugs:
 	* luckily no bugs by now ;-)
+improve:
+	- focus cell on add row
+testing:
+	- functional tests
+	- device testing
+	- accessibility tests
+	future:
+		- test automation
 organisation:
-	- include course version
 	- tag first version (v0.0.1)
-	- use less to create styles
 	- automate tasks with gulp
 	- create a npm package (init)
 	- develop on develop branch
+	+ use less to create styles @done(20-02-14 13:30)
+	+ include course version @done(20-02-13 16:30)
 	+ add gitignore file @done(20-02-13 16:00)
 	+ create github repository @done(20-02-13 14:00)
 	future:
@@ -40,6 +48,7 @@ features:
 		- formatting numbers
 		- local storage
 	future:
+		- lock columns for editing
 		- configuration environment
 		- table, row and cell actions
 		- edit table cells
