@@ -2,15 +2,19 @@ bugs:
 	* luckily no bugs by now ;-)
 improve:
 	- focus cell on add row
+	- actions on row add/change
 testing:
 	- functional tests
 	- device testing
 	- accessibility tests
 	future:
 		- test automation
+coding:
+	- try to code functional
+	- restructure code
 organisation:
 	- tag first version (v0.0.1)
-	- automate tasks with gulp
+	- automate tasks with npm scripts
 	- create a npm package (init)
 	- develop on develop branch
 	+ use less to create styles @done(20-02-14 13:30)
@@ -34,10 +38,10 @@ presentation:
 	- add logo to the README
 	- add a webpage on github
 features:
-	- edit table rows
 	- data from (json)
 	- data in HTML
 	- moving rows
+	- edit table rows @done(20-02-16 15:00)
 	- logger function with loglevels @done(20-02-13 15:00)
 	next:
 		- logging configurable

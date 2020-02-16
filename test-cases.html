@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="css/testcases.css"/>
 	<script src="js/editable.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/editable.css"/>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+
 </head><body>
 
 <header>
@@ -23,13 +26,14 @@
 			</tr></thead>
 			<tbody>
 				<tr><td>firstname</td><td>lastname (in HTML)</td></tr>
+				<tr><td>second</td><td>entry (in HTML)</td></tr>
 			</tbody>
 		</table>
 	</article>
 	<article class="testcase">
 		<h3>invalid structure</h3>
 		<table class="editable" id="invalid">
-			<tr><th>th in table</th></tr>
+			<tr><th data-field="test">th in table</th></tr>
 			<thead>
 				<tr><th>th in thead</th></tr>
 				<tr><td>td in thead</td></tr>
@@ -44,7 +48,7 @@
 </main>
 
 <footer>
-	ediTable version v0.0.1 (alpha1) 2020-02-13 &copy; Michael Wronna, Konstanz
+	ediTable version v0.0.1 (alpha1) 2020-02-16 &copy; Michael Wronna, Konstanz
 </footer>
 
 <script>
@@ -57,10 +61,7 @@
 		{},
 		{firstname:'Incomplete'},
 	];
-	const editable1 = new Editable({
-		selector: 'table#users',
-		objects: users,
-	});
+	const editable1 = new Editable({ selector:'table#users',objects:users,});
 	/* invalid table */
 	const editable2 = new Editable({selector:'table#invalid'});
 </script>
